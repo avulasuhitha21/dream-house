@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>House Plan & Interior Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>House Plan & Interior Design</h1>
+
+  <div class="form-container">
+    <label>Bedrooms:
+      <input type="number" id="bedroom" min="1" value="2">
+    </label>
+
+    <label>Kitchens:
+      <input type="number" id="kitchen" min="1" value="1">
+    </label>
+
+    <label>Washrooms:
+      <input type="number" id="washroom" min="1" value="2">
+    </label>
+
+    <label>Storage Rooms:
+      <input type="number" id="storage" min="0" value="1">
+    </label>
+
+    <label>Hall:
+      <input type="number" id="hall" min="1" value="1">
+    </label>
+
+    <button onclick="generatePlans()">Generate Plans</button>
+  </div>
+
+  <div id="plans" class="plans-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
